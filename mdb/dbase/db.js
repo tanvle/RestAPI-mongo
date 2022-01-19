@@ -13,6 +13,7 @@ const db = {
             useNewUrlParser: true,
             useUnifiedTopology: true
         });
+        this._dbClient = client;
     },  
     getConnection: function() {
         if(!this._dbClient) {
