@@ -24,7 +24,7 @@ app.listen(PORT, () => {
     `listening on port:${PORT}`.blue.underline );
 });
 
-const MONGO_URL = 'mongodb://localhost/txms';
+const MONGO_URL = 'mongodb://localhost/<dbName>';
 dbConnect = mongoose.connect(MONGO_URL)
   .then(() => {
     console.log(
